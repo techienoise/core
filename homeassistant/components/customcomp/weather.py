@@ -84,6 +84,7 @@ class OpenWeatherMapWeather(WeatherEntity):
         """Return the name of the sensor."""
         return self._name
 
+
 class WeatherData:
     """Get the latest data from OpenWeatherMap."""
 
