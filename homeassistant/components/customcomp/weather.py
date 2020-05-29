@@ -38,7 +38,7 @@ ATTRIBUTION = "Data provided by OpenWeatherMap"
 
 FORECAST_MODE = ["hourly", "daily", "freedaily"]
 
-DEFAULT_NAME = "OpenWeatherMap"
+DEFAULT_NAME = "CustomWeatherMap"
 
 MIN_TIME_BETWEEN_FORECAST_UPDATES = timedelta(minutes=30)
 MIN_TIME_BETWEEN_UPDATES = timedelta(minutes=10)
