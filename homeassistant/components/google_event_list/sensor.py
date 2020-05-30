@@ -162,6 +162,6 @@ class GoogleEvents(Entity):
         self._api.update()
         _LOGGER.info(
             "Data %s field. ",
-            data[0]
+            self._api.data[0]
         )
         self._state = self._api.data[0]
