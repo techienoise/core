@@ -164,4 +164,4 @@ class GoogleEvents(Entity):
             "Data %s field. ",
             self._api.data[0]
         )
-        self._state = self._api.data[0]
+        self._state = self._api.data[0]["summary"]
