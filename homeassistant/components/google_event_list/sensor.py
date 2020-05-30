@@ -160,4 +160,8 @@ class GoogleEvents(Entity):
     def update(self):
         """Get the latest data from the Google Wifi API."""
         self._api.update()
-        self._state = self._api.data["summary"]
+        _LOGGER.info(
+            "Data %s field. ",
+            data[0]
+        )
+        self._state = self._api.data[0]
