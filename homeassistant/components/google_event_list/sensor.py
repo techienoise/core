@@ -7,7 +7,19 @@ import voluptuous as vol
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
-
+from homeassistant.const import (
+    CONF_API_KEY,
+    CONF_LATITUDE,
+    CONF_LONGITUDE,
+    CONF_MODE,
+    CONF_NAME,
+    PRESSURE_HPA,
+    PRESSURE_INHG,
+    STATE_UNKNOWN,
+    TEMP_CELSIUS,
+)
+import homeassistant.helpers.config_validation as cv
+from homeassistant.util import Throttle
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
