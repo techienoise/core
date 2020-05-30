@@ -1,0 +1,7 @@
+{
+  "domain": "google_event_list",
+  "name": "Google Events",
+  "documentation": "",
+  "requirements": ["google-api-python-client","google-auth-oauthlib","google-auth-httplib2"],
+  "codeowners": ["techienoise"]
+}

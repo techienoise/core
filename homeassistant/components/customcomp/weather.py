@@ -38,6 +38,7 @@ ATTRIBUTION = "Data provided by OpenWeatherMap"
 
 FORECAST_MODE = ["hourly", "daily", "freedaily"]
 
+#Project Default Name 
 DEFAULT_NAME = "CustomWeatherMap"
 
 MIN_TIME_BETWEEN_FORECAST_UPDATES = timedelta(minutes=30)
@@ -62,6 +63,7 @@ CONDITION_CLASSES = {
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
     {
+        #Validation     Values      Format 
         vol.Required(CONF_API_KEY): cv.string,
         vol.Optional(CONF_LATITUDE): cv.latitude,
         vol.Optional(CONF_LONGITUDE): cv.longitude,

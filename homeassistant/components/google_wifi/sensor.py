@@ -189,3 +189,4 @@ class GoogleWifiAPI:
                     attr_key,
                 )
                 self.data[attr_key] = STATE_UNKNOWN
+
